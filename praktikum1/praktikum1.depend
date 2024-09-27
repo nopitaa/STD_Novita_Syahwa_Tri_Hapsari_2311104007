@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1727364111 source:n:\telkom university\semester 3\praktikum struktur data\praktikum1\main.cpp
+	<iostream>
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<iostream>
+	<conio.h>
+
+1727075390 source:n:\telkom university\semester 3\praktikum struktur data\praktikum1\src\percobaan1.cpp
+
+1727311991 source:n:\telkom university\semester 3\praktikum struktur data\praktikum1\unguided.cpp
+
+1727364369 source:n:\telkom university\semester 3\praktikum struktur data\praktikum1\tp.cpp
+	<iostream>
+	<iostream>
+	<string>
+	<iostream>
+
