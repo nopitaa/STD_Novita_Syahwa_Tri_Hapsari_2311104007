@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "n:/Telkom University/SEMESTER 3/PRAKTIKUM STRUKTUR DATA/04_Single_Linked_List_Bagian_1/UNGUIDED",
+      "program": "n:/Telkom University/SEMESTER 3/PRAKTIKUM STRUKTUR DATA/04_Single_Linked_List_Bagian_1/UNGUIDED/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
