@@ -4,13 +4,12 @@ using namespace std;
 
 int main() {
     List L;
-    CreateList(L);  // Inisialisasi list
+    CreateList(L);  
 
     int numData;
     cout << "Masukkan jumlah kendaraan: ";
     cin >> numData;
 
-    // Input data kendaraan
     for (int i = 0; i < numData; ++i) {
         infotype car;
         cout << "Masukkan nomor polisi: ";
@@ -19,13 +18,11 @@ int main() {
         cin >> car.warna;
         cout << "Masukkan tahun kendaraan: ";
         cin >> car.thnBuat;
-
-        // Cek apakah nomor polisi sudah terdaftar
         if (isNopolExist(L, car.nopol)) {
             cout << "Nomor polisi sudah terdaftar." << endl;
         } else {
-            address P = alokasi(car);  // Alokasi node baru
-            insertLast(L, P);          // Masukkan ke akhir list
+            address P = alokasi(car);  
+            insertLast(L, P);          
         }
     }
 
@@ -33,7 +30,6 @@ int main() {
     cout << "\nDATA LIST" << endl;
     printInfo(L);
 
-    // Menu interaktif untuk cari dan hapus elemen
     int choice;
     do {
         cout << "\nMenu Pilihan:\n";
@@ -64,14 +60,11 @@ int main() {
                 string nopolToDelete;
                 cout << "Masukkan nomor polisi yang ingin dihapus: ";
                 cin >> nopolToDelete;
-
                 deleteElm(L, nopolToDelete);
-
                 cout << "\nDATA LIST SETELAH PENGHAPUSAN" << endl;
                 printInfo(L);
                 break;
             }
-
             case 0:
                 cout << "Keluar dari program." << endl;
                 break;

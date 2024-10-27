@@ -1,12 +1,10 @@
 #include "doublelist.h"
 
-// Membuat list kosong
 void CreateList(List& L) {
     L.First = nullptr;
     L.Last = nullptr;
 }
 
-// Mengalokasikan elemen baru
 address alokasi(infotype x) {
     address P = new ElmtList;
     if (P != nullptr) {
@@ -17,12 +15,9 @@ address alokasi(infotype x) {
     return P;
 }
 
-// Dealokasi elemen
 void dealokasi(address P) {
     delete P;
 }
-
-// Menampilkan semua elemen dalam list
 void printInfo(const List& L) {
     address P = L.First;
     while (P != nullptr) {
@@ -32,8 +27,6 @@ void printInfo(const List& L) {
         P = P->next;
     }
 }
-
-// Memasukkan elemen di akhir list
 void insertLast(List& L, address P) {
     if (L.First == nullptr) {
         L.First = P;
@@ -91,8 +84,6 @@ void deleteElm(List& L, const string& nopol) {
         cout << "Elemen dengan nomor polisi " << nopol << " telah dihapus." << endl;
     }
 }
-
-// Menghapus elemen pertama
 void deleteFirst(List& L, address& P) {
     if (L.First != nullptr) {
         P = L.First;
@@ -104,8 +95,6 @@ void deleteFirst(List& L, address& P) {
         }
     }
 }
-
-// Menghapus elemen terakhir
 void deleteLast(List& L, address& P) {
     if (L.Last != nullptr) {
         P = L.Last;
@@ -117,8 +106,6 @@ void deleteLast(List& L, address& P) {
         }
     }
 }
-
-// Menghapus elemen setelah elemen tertentu
 void deleteAfter(address Prec, address& P) {
     if (Prec != nullptr && Prec->next != nullptr) {
         P = Prec->next;

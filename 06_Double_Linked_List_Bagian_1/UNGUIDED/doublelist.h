@@ -5,14 +5,12 @@
 #include <string>
 using namespace std;
 
-// Definisi tipe data untuk informasi kendaraan
 struct infotype {
-    string nopol;   // Nomor polisi
-    string warna;   // Warna kendaraan
-    int thnBuat;    // Tahun pembuatan
+    string nopol;  
+    string warna;   
+    int thnBuat;   
 };
 
-// Definisi struktur elemen list
 struct ElmtList {
     infotype info;
     ElmtList* next;
@@ -21,13 +19,11 @@ struct ElmtList {
 
 typedef ElmtList* address;
 
-// Definisi struktur List
 struct List {
     address First;
     address Last;
 };
 
-// Deklarasi fungsi-fungsi
 void CreateList(List& L);
 address alokasi(infotype x);
 void dealokasi(address P);
@@ -40,4 +36,4 @@ void deleteFirst(List& L, address& P);
 void deleteLast(List& L, address& P);
 void deleteAfter(address Prec, address& P);
 
-#endif  // DOUBLELIST_H
+#endif  

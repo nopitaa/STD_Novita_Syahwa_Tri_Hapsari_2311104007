@@ -2,7 +2,6 @@
 #include <string>
 using namespace std;
 
-// Struktur Node untuk menyimpan data buku
 struct Node {
     int idBuku;
     string judulBuku;
@@ -17,7 +16,6 @@ private:
     Node* tail;
 
 public:
-    // Constructor
     BookList() {
         head = NULL;
         tail = NULL;
@@ -32,11 +30,9 @@ public:
         newNode->next = NULL;
         newNode->prev = NULL;
 
-        // Jika list kosong
         if (head == NULL) {
             head = tail = newNode;
         }
-        // Jika list tidak kosong
         else {
             tail->next = newNode;
             newNode->prev = tail;
@@ -51,7 +47,6 @@ public:
             cout << "Daftar buku kosong!\n";
             return;
         }
-
         cout << "\nDaftar Buku (Awal ke Akhir):\n";
         cout << "============================\n";
         Node* current = head;
