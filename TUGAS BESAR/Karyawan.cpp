@@ -196,9 +196,9 @@ void printListPegawai(const ListPegawai& L) {
         while (P != nullptr) {
             if (P->departemen == dept) {
                 cout << "| " << P->idPegawai << "\t  | " //memanggil masing masing dri id pegawa, nama, jabatan dan no telp
-                     << P->namaPegawai << "\t    | "
-                     << P->jabatan << "\t | "
-                     << P->noTelp << " |\n";
+                        << P->namaPegawai << "\t    | "
+                        << P->jabatan << "\t | "
+                        << P->noTelp << " |\n";
                 found = true;
             }
             P = P->next;
