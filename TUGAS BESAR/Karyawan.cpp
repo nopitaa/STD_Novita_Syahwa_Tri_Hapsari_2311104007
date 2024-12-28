@@ -92,6 +92,7 @@ void insertPegawai(ListPegawai &L, addressPegawai P)
     cout << "Pegawai baru berhasil ditambahkan.\n";
 }
 
+//Bagian Nopi
 //  function insert proyek baru -> sama seperti yang pegawai konsepnya
 void insertProyek(addressPegawai pegawai, addressProyek P)
 {
@@ -261,6 +262,7 @@ void printListPegawai(const ListPegawai &L)
     }
 }
 
+//Bagian Nopi
 void printProyek(const ListPegawai &L)
 {
     addressPegawai P = L.first;
@@ -271,7 +273,7 @@ void printProyek(const ListPegawai &L)
         {
             cout << "Proyek: " << Q->namaProyek << ", Durasi: " << Q->durasi << " bulan, Departemen: " << Q->departemen
             //  diedit biar nanti dia juga memanggil nama pegawainya.
-                 << ", Dikerjakan oleh: " << P->namaPegawai << " (ID: " << P->idPegawai << ")\n";
+                << ", Dikerjakan oleh: " << P->namaPegawai << " (ID: " << P->idPegawai << ")\n";
             Q = Q->next;
         }
         P = P->next;
